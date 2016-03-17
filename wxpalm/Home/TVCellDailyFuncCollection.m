@@ -26,12 +26,12 @@
 #pragma mark UICollectionViewDataSource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 1;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 4;
+    return 6;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -39,8 +39,16 @@
     static NSString * CellIdentifier = @"HomeDFCollectionCell";
     HomeDFCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    cell.backgroundColor = [UIColor redColor];  
     
     return cell;
+}
+
+// 定义cell大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize szFrame = collectionView.frame.size;
+    return CGSizeMake((szFrame.width - 16)/2 - 2, 60);
 }
 
 #pragma mark <UICollectionViewDelegate>

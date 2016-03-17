@@ -13,7 +13,9 @@
 
 @interface TVCellTBCollection()
 {
-    NSMutableDictionary* _homeTBData;// ToolBar中的常用功能显示数据
+    NSMutableArray* _homeTBData;// ToolBar中的常用功能显示数据
+    
+    NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
 }
 @end
 
@@ -24,7 +26,10 @@
     
     // 读取程序包中的资源文件
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"homeTBInfo" ofType:@"plist"];
-    _homeTBData = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
+    _homeTBData = [NSMutableArray arrayWithContentsOfFile:_plistPath];
+    
+    NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
+    _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -51,9 +56,9 @@
     
     NSInteger nRow = [indexPath row];
     // 获取对应描述
-    NSArray *keys = [_homeTBData allKeys];
+   // NSArray *keys = [_homeTBData allKeys];
     
-    NSMutableDictionary* dicTemp = [_homeTBData objectForKey:keys[nRow]];
+    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:_homeTBData[nRow]];
     
     // 更新Cell的显示
     [cell updateView:dicTemp];

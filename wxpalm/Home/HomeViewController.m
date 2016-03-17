@@ -106,15 +106,6 @@
             break;
     }
     
-    
-    
-    
-    NSUInteger row = [indexPath row];
-    
-   // NSDictionary* rowData = [self.computers objectAtIndex:row];
-    //cell.colorLabel.text = [rowData objectForKey:@"Color"];
-   // cell.nameLabel.text = [rowData objectForKey:@"Name"];
-    
     return  cell;
 }
 
@@ -131,7 +122,7 @@
             break;
             
         case 2:
-            heightForRow = 140;
+            heightForRow = 190;
             break;
             
         default:
