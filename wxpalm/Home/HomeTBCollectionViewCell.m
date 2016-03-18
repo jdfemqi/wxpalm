@@ -7,7 +7,7 @@
 //
 
 #import "HomeTBCollectionViewCell.h"
-
+#import "macroDefine.h"
 
 @implementation HomeTBCollectionViewCell
 
@@ -21,6 +21,8 @@
     
     // UILabel文本
     self.lbHomeTBCell.text = [dicTemp objectForKey:HomeTBCellMotif];
+    
+    // 图标
     NSString *strImageName = [dicTemp objectForKey:HomeTBCellIconName];
     [self.ivHomeTBCell setImage:[UIImage imageNamed:strImageName]];
 

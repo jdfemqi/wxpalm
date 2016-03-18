@@ -9,11 +9,9 @@
 #import "TVCellTBCollection.h"
 #import "HomeTBCollectionViewCell.h"
 
-
-
 @interface TVCellTBCollection()
 {
-    NSMutableArray* _homeTBData;// ToolBar中的常用功能显示数据
+    NSMutableDictionary* _homeTBData;// ToolBar中的常用功能显示数据
     
     NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
 }
@@ -26,7 +24,7 @@
     
     // 读取程序包中的资源文件
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"homeTBInfo" ofType:@"plist"];
-    _homeTBData = [NSMutableArray arrayWithContentsOfFile:_plistPath];
+    _homeTBData = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
     
     NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
     _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
@@ -54,11 +52,11 @@
     static NSString * CellIdentifier = @"HomeTBCollectionCell";
     HomeTBCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSInteger nRow = [indexPath row];
     // 获取对应描述
-   // NSArray *keys = [_homeTBData allKeys];
-    
-    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:_homeTBData[nRow]];
+    NSInteger nRow = [indexPath row];
+    NSArray* arrayTB = [_homeTBData allKeys];
+    NSString* strKey = [_homeTBData objectForKey:arrayTB[nRow]];
+    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
     
     // 更新Cell的显示
     [cell updateView:dicTemp];
@@ -67,5 +65,11 @@
 }
 
 #pragma mark <UICollectionViewDelegate>
+//UICollectionView被选中时调用的方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = (UICollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+}
 
 @end

@@ -10,11 +10,24 @@
 #import "HomeDFCollectionViewCell.h"
 
 @interface TVCellDailyFuncCollection()
+{
+    NSMutableArray* _DailyFuncData;// ToolBar中的常用功能显示数据
+    NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
+}
 @end
+
 @implementation TVCellDailyFuncCollection
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    // 读取程序包中的资源文件
+    NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"DailyFuncInfo" ofType:@"plist"];
+    _DailyFuncData = [NSMutableArray arrayWithContentsOfFile:_plistPath];
+    
+    
+    NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
+    _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -39,8 +52,15 @@
     static NSString * CellIdentifier = @"HomeDFCollectionCell";
     HomeDFCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor redColor];  
+    cell.backgroundColor = [UIColor redColor];
     
+    // 获取对应描述
+    NSInteger nRow = [indexPath row];
+    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:_DailyFuncData[nRow]];
+    
+    // 更新Cell的显示
+    [cell updateView:dicTemp];
+
     return cell;
 }
 
