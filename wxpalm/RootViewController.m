@@ -1,18 +1,18 @@
 //
-//  CareersServiceViewController.m
+//  RootViewController.m
 //  wxpalm
 //
-//  Created by qiujian on 16/3/18.
+//  Created by qiujian on 16/3/20.
 //  Copyright © 2016年 jdfemqi. All rights reserved.
-//  就业服务
+//
 
-#import "CareersServiceViewController.h"
+#import "RootViewController.h"
 
-@interface CareersServiceViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation CareersServiceViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

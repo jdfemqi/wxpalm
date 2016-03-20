@@ -20,10 +20,10 @@
     //[cell.lbHomeTBCell setBackgroundColor:color];
     
     // UILabel文本
-    self.lbHomeTBCell.text = [dicTemp objectForKey:HomeTBCellMotif];
+    self.lbHomeTBCell.text = [dicTemp objectForKey:provideServiceMotif];
     
     // 图标
-    NSString *strImageName = [dicTemp objectForKey:HomeTBCellIconName];
+    NSString *strImageName = [dicTemp objectForKey:provideServiceIconName];
     [self.ivHomeTBCell setImage:[UIImage imageNamed:strImageName]];
 
 }

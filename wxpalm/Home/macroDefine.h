@@ -9,11 +9,15 @@
 #ifndef macroDefine_h
 #define macroDefine_h
 
+// 便民服务单元信息
+#define provideServiceMotif             @"motif"            // 主题
+#define provideServiceBriefDes          @"briefDes"         // 简要描述
+#define provideServiceIconName          @"iconName"         // 图标名称
+#define provideServiceIconName2         @"iconName2"        // 副图标名
+#define provideServicepviewController   @"pviewController"  // 便民功能界面控制器
 
-#define HomeTBCellMotif             @"motif"            // 主题
-#define HomeTBCellBriefDes          @"briefDes"         // 简要描述
-#define HomeTBCellIconName          @"iconName"         // 图标名称
-#define HomeTBCellIconName2         @"iconName2"        // 副图标名
-#define HomeTBCellpviewController   @"pviewController"  // 便民功能界面控制器
+// 便民服务项目
+#define PSCareersService                @"CareersService"   // 就业服务
+#define PSIntegralExchange              @"Integral exchange"// 积分兑换
 
 #endif /* macroDefine_h */

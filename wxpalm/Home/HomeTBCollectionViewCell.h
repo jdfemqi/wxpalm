@@ -11,7 +11,11 @@
 
 
 @interface HomeTBCollectionViewCell : UICollectionViewCell
+{
+    NSString* _strKey;
+}
 
+@property(nonatomic,weak) NSString* _strKey;
 @property(nonatomic,weak)IBOutlet UILabel *lbHomeTBCell;
 @property(nonatomic,weak)IBOutlet UIImageView *ivHomeTBCell;
 

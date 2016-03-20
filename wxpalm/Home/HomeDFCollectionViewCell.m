@@ -23,11 +23,11 @@
 -(void)updateView:(NSMutableDictionary*)dicTemp
 {
     // UILabel文本
-    _lbMotif.text = [dicTemp objectForKey:HomeTBCellMotif];
-    lbBrieDes.text = [dicTemp objectForKey:HomeTBCellBriefDes];
+    _lbMotif.text = [dicTemp objectForKey:provideServiceMotif];
+    lbBrieDes.text = [dicTemp objectForKey:provideServiceBriefDes];
     
     // 图标
-    NSString *strImageName = [dicTemp objectForKey:HomeTBCellIconName];
+    NSString *strImageName = [dicTemp objectForKey:provideServiceIconName];
     [_iconFunc setImage:[UIImage imageNamed:strImageName]];
 }
 

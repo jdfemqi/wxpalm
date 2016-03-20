@@ -45,6 +45,7 @@
 		06BD8A6A1C9BC391003C15FC /* ProvideServicesInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */; };
 		06BD8A6C1C9BC41F003C15FC /* ProvideServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */; };
 		06BD8A6F1C9BC4A1003C15FC /* CareersServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8A6E1C9BC4A1003C15FC /* CareersServiceViewController.m */; };
+		06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2063E1C9E8D64009A0915 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,8 @@
 		06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProvideServices.storyboard; sourceTree = "<group>"; };
 		06BD8A6D1C9BC4A1003C15FC /* CareersServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareersServiceViewController.h; sourceTree = "<group>"; };
 		06BD8A6E1C9BC4A1003C15FC /* CareersServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareersServiceViewController.m; sourceTree = "<group>"; };
+		06C2063D1C9E8D64009A0915 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		06C2063E1C9E8D64009A0915 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				060A81171C92893E00CAD221 /* ViewController.h */,
 				060A81181C92893E00CAD221 /* ViewController.m */,
 				060A811A1C92893E00CAD221 /* Main.storyboard */,
+				06C2063D1C9E8D64009A0915 /* RootViewController.h */,
+				06C2063E1C9E8D64009A0915 /* RootViewController.m */,
 				060A811D1C92893E00CAD221 /* Assets.xcassets */,
 				060A811F1C92893E00CAD221 /* LaunchScreen.storyboard */,
 				060A81221C92893E00CAD221 /* Info.plist */,
@@ -349,6 +354,7 @@
 				06BD8A6F1C9BC4A1003C15FC /* CareersServiceViewController.m in Sources */,
 				0677426D1C99701600C39680 /* HomeDFCollectionViewCell.m in Sources */,
 				0677426E1C99701600C39680 /* HomeTBCollectionViewCell.m in Sources */,
+				06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */,
 				067742721C99701600C39680 /* TVCellIAMIC.m in Sources */,
 				0677426F1C99701600C39680 /* HomeViewController.m in Sources */,
 				067742711C99701600C39680 /* TVCellDailyFuncCollection.m in Sources */,

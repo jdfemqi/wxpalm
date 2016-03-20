@@ -11,7 +11,7 @@
 
 @interface TVCellDailyFuncCollection()
 {
-    NSMutableArray* _DailyFuncData;// ToolBar中的常用功能显示数据
+    NSMutableDictionary* _DailyFuncData;// ToolBar中的常用功能显示数据
     NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
 }
 @end
@@ -23,7 +23,7 @@
     
     // 读取程序包中的资源文件
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"DailyFuncInfo" ofType:@"plist"];
-    _DailyFuncData = [NSMutableArray arrayWithContentsOfFile:_plistPath];
+    _DailyFuncData = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
     
     
     NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
@@ -56,7 +56,11 @@
     
     // 获取对应描述
     NSInteger nRow = [indexPath row];
-    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:_DailyFuncData[nRow]];
+    NSArray* dfKeys = [_DailyFuncData allKeys];
+    NSArray* sortKeys = [dfKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    NSString* strKey = [_DailyFuncData objectForKey:sortKeys[nRow]];
+    
+    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
     
     // 更新Cell的显示
     [cell updateView:dicTemp];

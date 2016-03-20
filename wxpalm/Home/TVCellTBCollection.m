@@ -8,12 +8,17 @@
 
 #import "TVCellTBCollection.h"
 #import "HomeTBCollectionViewCell.h"
+#import "macroDefine.h"
+#import "CareersServiceViewController.h"
+#import "../AppDelegate.h"
 
 @interface TVCellTBCollection()
 {
     NSMutableDictionary* _homeTBData;// ToolBar中的常用功能显示数据
     
     NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
+    
+    CareersServiceViewController *_csViewController;
 }
 @end
 
@@ -54,9 +59,12 @@
     
     // 获取对应描述
     NSInteger nRow = [indexPath row];
-    NSArray* arrayTB = [_homeTBData allKeys];
-    NSString* strKey = [_homeTBData objectForKey:arrayTB[nRow]];
+    NSArray* TBKeys = [_homeTBData allKeys];
+    NSArray* sortKeys = [TBKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    NSString* strKey = [_homeTBData objectForKey:sortKeys[nRow]];
     NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
+    
+    cell._strKey = strKey;
     
     // 更新Cell的显示
     [cell updateView:dicTemp];
@@ -68,8 +76,38 @@
 //UICollectionView被选中时调用的方法
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell * cell = (UICollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    HomeTBCollectionViewCell * cell = (HomeTBCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
+    
+    NSString* strKey = cell._strKey;
+    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
+
+    UIViewController* pViewController = nil;
+    
+    // 就业服务
+    if([strKey isEqualToString:PSCareersService])
+    {
+        if ( _csViewController == nil)
+        {
+            UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
+             _csViewController = [psStoryboard instantiateViewControllerWithIdentifier:@"PSCareersService"];
+        }
+        
+        pViewController = _csViewController;
+    }
+    
+    
+    // 加入navigationController显示
+    UIViewController* pSuperViewControll = nil;
+    for (UIView* next = self.superview; next; next = next.superview) {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            pSuperViewControll = (UIViewController*)nextResponder;
+            break;
+        }
+    }
+    
+    [pSuperViewControll.navigationController pushViewController:pViewController animated:YES];
 }
 
 @end
