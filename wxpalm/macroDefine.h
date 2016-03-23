@@ -20,4 +20,7 @@
 #define PSCareersService                @"CareersService"   // 就业服务
 #define PSIntegralExchange              @"Integral exchange"// 积分兑换
 
+#define screenH [UIScreen mainScreen].bounds.size.height
+#define screenW [UIScreen mainScreen].bounds.size.width
+
 #endif /* macroDefine_h */

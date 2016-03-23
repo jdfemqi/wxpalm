@@ -1,34 +1,27 @@
 //
-//  CareersServiceViewController.m
+//  ProfileViewController.m
 //  wxpalm
 //
-//  Created by qiujian on 16/3/18.
+//  Created by qiujian on 16/3/23.
 //  Copyright © 2016年 jdfemqi. All rights reserved.
-//  就业服务
+//
 
-#import "CareersServiceViewController.h"
-#import "../macroDefine.h"
+#import "ProfileViewController.h"
 
-@interface CareersServiceViewController ()
+@interface ProfileViewController ()
 
 @end
 
-@implementation CareersServiceViewController
+@implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController.navigationBar setHidden:FALSE];
 }
 
 /*
@@ -40,6 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

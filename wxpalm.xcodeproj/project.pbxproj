@@ -46,6 +46,10 @@
 		06BD8A6C1C9BC41F003C15FC /* ProvideServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */; };
 		06BD8A6F1C9BC4A1003C15FC /* CareersServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8A6E1C9BC4A1003C15FC /* CareersServiceViewController.m */; };
 		06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2063E1C9E8D64009A0915 /* RootViewController.m */; };
+		06FD907D1CA2553F0041BB50 /* ProvideServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD907C1CA2553F0041BB50 /* ProvideServicesViewController.m */; };
+		06FD90851CA25A1D0041BB50 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD90841CA25A1D0041BB50 /* ProfileViewController.m */; };
+		06FD90881CA25A3A0041BB50 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD90871CA25A3A0041BB50 /* CartViewController.m */; };
+		06FD908B1CA25BE10041BB50 /* MallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD908A1CA25BE10041BB50 /* MallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +97,6 @@
 		06BD8A5D1C9BBCB0003C15FC /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		06BD8A5E1C9BBCB0003C15FC /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
 		06BD8A5F1C9BBCB0003C15FC /* work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = work.png; sourceTree = "<group>"; };
-		06BD8A651C9BBF21003C15FC /* macroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macroDefine.h; sourceTree = "<group>"; };
 		06BD8A661C9BBFD3003C15FC /* DailyFuncInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DailyFuncInfo.plist; sourceTree = "<group>"; };
 		06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvideServicesInfo.plist; sourceTree = "<group>"; };
 		06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProvideServices.storyboard; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 		06BD8A6E1C9BC4A1003C15FC /* CareersServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareersServiceViewController.m; sourceTree = "<group>"; };
 		06C2063D1C9E8D64009A0915 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		06C2063E1C9E8D64009A0915 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		06EB6ABF1C9FBC5600FBC6A1 /* macroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macroDefine.h; sourceTree = "<group>"; };
+		06FD907B1CA2553F0041BB50 /* ProvideServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvideServicesViewController.h; sourceTree = "<group>"; };
+		06FD907C1CA2553F0041BB50 /* ProvideServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvideServicesViewController.m; sourceTree = "<group>"; };
+		06FD90831CA25A1D0041BB50 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Profile/ProfileViewController.h; sourceTree = "<group>"; };
+		06FD90841CA25A1D0041BB50 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Profile/ProfileViewController.m; sourceTree = "<group>"; };
+		06FD90861CA25A3A0041BB50 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartViewController.h; path = Cart/CartViewController.h; sourceTree = "<group>"; };
+		06FD90871CA25A3A0041BB50 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartViewController.m; path = Cart/CartViewController.m; sourceTree = "<group>"; };
+		06FD90891CA25BE10041BB50 /* MallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallViewController.h; sourceTree = "<group>"; };
+		06FD908A1CA25BE10041BB50 /* MallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,8 @@
 		060A81101C92893E00CAD221 /* wxpalm */ = {
 			isa = PBXGroup;
 			children = (
+				06FD90821CA259F00041BB50 /* Profile */,
+				06FD907E1CA2563B0041BB50 /* Cart */,
 				06BD8A681C9BC36F003C15FC /* ProvideServices */,
 				0677425F1C99701600C39680 /* Home */,
 				060A812B1C928E9E00CAD221 /* images */,
@@ -141,6 +155,7 @@
 				060A81151C92893E00CAD221 /* AppDelegate.m */,
 				060A81171C92893E00CAD221 /* ViewController.h */,
 				060A81181C92893E00CAD221 /* ViewController.m */,
+				06EB6ABF1C9FBC5600FBC6A1 /* macroDefine.h */,
 				060A811A1C92893E00CAD221 /* Main.storyboard */,
 				06C2063D1C9E8D64009A0915 /* RootViewController.h */,
 				06C2063E1C9E8D64009A0915 /* RootViewController.m */,
@@ -200,7 +215,6 @@
 				0677426C1C99701600C39680 /* TVCellTBCollection.m */,
 				067742691C99701600C39680 /* TVCellIAMIC.h */,
 				0677426A1C99701600C39680 /* TVCellIAMIC.m */,
-				06BD8A651C9BBF21003C15FC /* macroDefine.h */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -249,8 +263,30 @@
 				06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */,
 				06BD8A6D1C9BC4A1003C15FC /* CareersServiceViewController.h */,
 				06BD8A6E1C9BC4A1003C15FC /* CareersServiceViewController.m */,
+				06FD907B1CA2553F0041BB50 /* ProvideServicesViewController.h */,
+				06FD907C1CA2553F0041BB50 /* ProvideServicesViewController.m */,
+				06FD90891CA25BE10041BB50 /* MallViewController.h */,
+				06FD908A1CA25BE10041BB50 /* MallViewController.m */,
 			);
 			path = ProvideServices;
+			sourceTree = "<group>";
+		};
+		06FD907E1CA2563B0041BB50 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				06FD90861CA25A3A0041BB50 /* CartViewController.h */,
+				06FD90871CA25A3A0041BB50 /* CartViewController.m */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		06FD90821CA259F00041BB50 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				06FD90831CA25A1D0041BB50 /* ProfileViewController.h */,
+				06FD90841CA25A1D0041BB50 /* ProfileViewController.m */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,13 +386,17 @@
 				067742731C99701600C39680 /* TVCellTBCollection.m in Sources */,
 				060A81191C92893E00CAD221 /* ViewController.m in Sources */,
 				060A81161C92893E00CAD221 /* AppDelegate.m in Sources */,
+				06FD90851CA25A1D0041BB50 /* ProfileViewController.m in Sources */,
 				060A81131C92893E00CAD221 /* main.m in Sources */,
 				06BD8A6F1C9BC4A1003C15FC /* CareersServiceViewController.m in Sources */,
 				0677426D1C99701600C39680 /* HomeDFCollectionViewCell.m in Sources */,
+				06FD907D1CA2553F0041BB50 /* ProvideServicesViewController.m in Sources */,
 				0677426E1C99701600C39680 /* HomeTBCollectionViewCell.m in Sources */,
+				06FD908B1CA25BE10041BB50 /* MallViewController.m in Sources */,
 				06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */,
 				067742721C99701600C39680 /* TVCellIAMIC.m in Sources */,
 				0677426F1C99701600C39680 /* HomeViewController.m in Sources */,
+				06FD90881CA25A3A0041BB50 /* CartViewController.m in Sources */,
 				067742711C99701600C39680 /* TVCellDailyFuncCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

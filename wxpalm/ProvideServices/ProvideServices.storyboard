@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Careers Service View Controller-->
@@ -18,7 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="就业服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyA-BG-3Zx">
-                                <rect key="frame" x="266" y="290" width="68" height="20.5"/>
+                                <rect key="frame" x="266" y="30" width="68" height="20.5"/>
+                                <color key="backgroundColor" red="0.83666325399999997" green="1" blue="0.62676625649999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -26,14 +28,38 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" id="1mV-ZQ-lYp"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" constant="158" id="4oa-mR-eqj"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" constant="158" id="6OZ-Cy-Dw0"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="Xnu-KN-hiG" secondAttribute="top" id="7Hg-Tp-Qb4"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="Xnu-KN-hiG" secondAttribute="topMargin" id="9Um-7E-V5L"/>
                             <constraint firstItem="VyA-BG-3Zx" firstAttribute="centerX" secondItem="Xnu-KN-hiG" secondAttribute="centerX" id="B7r-PY-bXV"/>
                             <constraint firstItem="VyA-BG-3Zx" firstAttribute="centerY" secondItem="Xnu-KN-hiG" secondAttribute="centerY" id="DR6-I9-Gx3"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" constant="10" id="Ea5-5d-jgX"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="Xnu-KN-hiG" secondAttribute="top" constant="30" id="MFa-OX-gU5"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="Xnu-KN-hiG" secondAttribute="topMargin" id="fXC-zo-iUH"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" id="ktz-LC-24D"/>
+                            <constraint firstItem="VyA-BG-3Zx" firstAttribute="top" secondItem="rin-dW-DNo" secondAttribute="bottom" constant="10" id="wlc-cy-q3b"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1mV-ZQ-lYp"/>
+                                <exclude reference="4oa-mR-eqj"/>
+                                <exclude reference="6OZ-Cy-Dw0"/>
+                                <exclude reference="7Hg-Tp-Qb4"/>
+                                <exclude reference="9Um-7E-V5L"/>
+                                <exclude reference="DR6-I9-Gx3"/>
+                                <exclude reference="Ea5-5d-jgX"/>
+                                <exclude reference="fXC-zo-iUH"/>
+                                <exclude reference="ktz-LC-24D"/>
+                                <exclude reference="wlc-cy-q3b"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tPI-iK-93g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="399"/>
+            <point key="canvasLocation" x="237" y="408"/>
         </scene>
     </scenes>
 </document>

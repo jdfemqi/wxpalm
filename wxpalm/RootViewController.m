@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 背景透明
+    UINavigationBar* navBar = self.navigationController.navigationBar;
+    if ([navBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
+        
+        [navBar setBackgroundImage:[UIImage imageNamed:@"Home.png"] forBarMetrics:UIBarMetricsDefault];
+    }
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setHidden:TRUE];
 }
 
 - (void)didReceiveMemoryWarning {
