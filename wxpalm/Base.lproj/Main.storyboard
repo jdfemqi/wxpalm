@@ -103,8 +103,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-Or-IdQ">
-                                                    <rect key="frame" x="122" y="0.0" width="438" height="79.5"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-Or-IdQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="560" height="79.5"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="AbF-uW-Qit">
                                                         <size key="itemSize" width="60" height="60"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CommodityFoods</key>
+	<dict>
+		<key>motif</key>
+		<string>食品</string>
+		<key>briefDes</key>
+		<string>坚果炒货 肉干肉松 蜜饯果脯</string>
+		<key>iconName</key>
+		<string>work.png</string>
+	</dict>
+	<key>CommodityHealthProducts</key>
+	<dict>
+		<key>motif</key>
+		<string>保健品</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>toolicon.png</string>
+	</dict>
+</dict>
+</plist>

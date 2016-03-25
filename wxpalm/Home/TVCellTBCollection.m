@@ -10,6 +10,7 @@
 #import "HomeTBCollectionViewCell.h"
 #import "macroDefine.h"
 #import "CareersServiceViewController.h"
+#import "IntegratedMallViewController.h"
 #import "../AppDelegate.h"
 
 @interface TVCellTBCollection()
@@ -18,7 +19,8 @@
     
     NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
     
-    CareersServiceViewController *_csViewController;
+    CareersServiceViewController* _csViewController;    // 就业服务
+    IntegratedMallViewController* _IntegratedMall;// 综合商城
 }
 @end
 
@@ -33,6 +35,9 @@
     
     NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
     _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
+    
+    _csViewController = nil;
+    _IntegratedMall = nil;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -95,7 +100,15 @@
         
         pViewController = _csViewController;
     }
-    
+    else if ([strKey isEqualToString:PSIntegratedMall])  // 综合商城
+    {
+        if (_IntegratedMall == nil) {
+            UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
+            _IntegratedMall = [psStoryboard instantiateViewControllerWithIdentifier:@"IntegratedMallViewController"];
+        }
+        
+        pViewController = _IntegratedMall;
+    }
     
     // 加入navigationController显示
     UIViewController* pSuperViewControll = nil;

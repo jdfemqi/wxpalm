@@ -18,6 +18,7 @@
 
 // 便民服务项目
 #define PSCareersService                @"CareersService"   // 就业服务
+#define PSIntegratedMall                @"IntegratedMall"  // 综合商城
 #define PSIntegralExchange              @"Integral exchange"// 积分兑换
 
 #define screenH [UIScreen mainScreen].bounds.size.height

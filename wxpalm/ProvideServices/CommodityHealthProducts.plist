@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BrandHealth</key>
+	<dict>
+		<key>motif</key>
+		<string>品牌保健</string>
+		<key>briefDes</key>
+		<string>维生素类 蛋白类 食用钙类</string>
+		<key>iconName</key>
+		<string>work.png</string>
+	</dict>
+</dict>
+</plist>
