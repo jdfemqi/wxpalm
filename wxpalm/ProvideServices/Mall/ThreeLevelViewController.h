@@ -15,4 +15,6 @@
 @property (nonatomic, retain)UIImage* rowImage;     // 行图标
 @property (nonatomic, retain)NSString* strThreeLevelPlist;     // 三级结构内容
 
+@property (nonatomic, retain)NSArray* arrayThreeLevelPlist;     // 三级结构内容
+
 @end

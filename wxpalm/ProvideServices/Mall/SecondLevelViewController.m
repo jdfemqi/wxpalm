@@ -15,8 +15,6 @@
     NSMutableDictionary* _dicCommodityType;
     
     NSInteger _nCommodityType;
-    
-    
 }
 @property (nonatomic, retain)NSArray* controllers;
 
@@ -44,7 +42,6 @@
         NSMutableDictionary* dicTemp = [_dicCommodityType objectForKey:obj];
         
         // 各种商品
-        //ThreeLevelViewController* commodityController = [[ThreeLevelViewController alloc ]init];
         UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
         ThreeLevelViewController* commodityController = [psStoryboard instantiateViewControllerWithIdentifier:@"ThreeLevelViewController"];
         
@@ -53,6 +50,7 @@
         NSString* strIconName =[dicTemp objectForKey:@"iconName"];
         commodityController.rowImage = [UIImage imageNamed:strIconName];
         commodityController.strThreeLevelPlist = obj;
+        commodityController.arrayThreeLevelPlist = [dicTemp objectForKey:@"nextLevel"];
         
         [array addObject:commodityController];
     }

@@ -7,7 +7,7 @@
 //  就业服务
 
 #import "CareersServiceViewController.h"
-#import "../macroDefine.h"
+#import "../../macroDefine.h"
 
 @interface CareersServiceViewController ()
 

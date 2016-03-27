@@ -7,8 +7,16 @@
 //
 
 #import "ThreeLevelViewController.h"
+#import "FourLevelViewController.h"
 
 @interface ThreeLevelViewController ()
+{
+    NSMutableDictionary* _dicCommodityType;
+    
+    NSInteger _nCommodityType;
+}
+
+@property (nonatomic, retain)NSArray* controllers;
 
 @end
 
@@ -17,6 +25,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSMutableArray* array = [[NSMutableArray alloc]init];
+    
+    self.controllers = array;
+    
+    NSArray* sortKeys = self.arrayThreeLevelPlist;
+    
+    for(id obj in sortKeys)
+    {
+        NSMutableDictionary* dicTemp = [_dicCommodityType objectForKey:obj];
+        
+        // 各种商品
+        UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
+        FourLevelViewController* commodityController = [psStoryboard instantiateViewControllerWithIdentifier:@"FourLevelViewController"];
+        
+        commodityController.strMotif = obj;
+        
+        [array addObject:commodityController];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,15 +71,20 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = nil;
-    cell = [tableView dequeueReusableCellWithIdentifier:@"SLCellCommodity"];
+    static NSString* RootViewControllerCell = @"ThreeLevelViewControllerCell";
     
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SLCellCommodity"] ;
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:RootViewControllerCell];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:RootViewControllerCell];
     }
-
     
+    // Configure the cell
+    NSUInteger row = [indexPath row];
+    FourLevelViewController* controller = [self.controllers objectAtIndex:row];
+    
+    cell.textLabel.text = controller.strMotif;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return  cell;
 }
@@ -65,6 +98,10 @@
 #pragma mark Table View Delegate Methods
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
+    NSUInteger row = [indexPath row];
+    FourLevelViewController* nextController = [self.controllers objectAtIndex:row];
+    
+    [self.navigationController pushViewController:nextController animated:YES];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -78,6 +115,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString * CellIdentifier = @"BestSellersCollectionViewCell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -87,9 +125,9 @@
 }
 
 // 定义cell大小
-/*- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake(60, 60);
-}*/
+}
 
 @end

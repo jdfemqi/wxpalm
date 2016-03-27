@@ -10,6 +10,13 @@
 		<string></string>
 		<key>iconName</key>
 		<string>work.png</string>
+		<key>nextLevel</key>
+		<array>
+			<string>饼干蛋糕</string>
+			<string>糖果巧克力</string>
+			<string>休闲零食</string>
+			<string>冲调饮品</string>
+		</array>
 	</dict>
 	<key>CasualSnacks</key>
 	<dict>
@@ -19,6 +26,12 @@
 		<string>坚果炒货 肉干肉松 蜜饯果脯</string>
 		<key>iconName</key>
 		<string>toolicon.png</string>
+		<key>nextLevel</key>
+		<array>
+			<string>坚果炒货</string>
+			<string>肉干肉松</string>
+			<string>蜜饯果脯</string>
+		</array>
 	</dict>
 </dict>
 </plist>
