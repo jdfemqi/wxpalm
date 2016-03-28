@@ -55,6 +55,8 @@
 		06BD8A6A1C9BC391003C15FC /* ProvideServicesInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */; };
 		06BD8A6C1C9BC41F003C15FC /* ProvideServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */; };
 		06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2063E1C9E8D64009A0915 /* RootViewController.m */; };
+		06C95EA01CA8ED9B00779FDA /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C95E9F1CA8ED9B00779FDA /* ProductDetailsViewController.m */; };
+		06C95EA31CA8EEAE00779FDA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 06C95EA21CA8EEAE00779FDA /* test.html */; };
 		06FD907D1CA2553F0041BB50 /* ProvideServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD907C1CA2553F0041BB50 /* ProvideServicesViewController.m */; };
 		06FD90851CA25A1D0041BB50 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD90841CA25A1D0041BB50 /* ProfileViewController.m */; };
 		06FD90881CA25A3A0041BB50 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD90871CA25A3A0041BB50 /* CartViewController.m */; };
@@ -127,6 +129,9 @@
 		06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProvideServices.storyboard; sourceTree = "<group>"; };
 		06C2063D1C9E8D64009A0915 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		06C2063E1C9E8D64009A0915 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		06C95E9E1CA8ED9B00779FDA /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
+		06C95E9F1CA8ED9B00779FDA /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
+		06C95EA21CA8EEAE00779FDA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		06EB6ABF1C9FBC5600FBC6A1 /* macroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macroDefine.h; sourceTree = "<group>"; };
 		06FD907B1CA2553F0041BB50 /* ProvideServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvideServicesViewController.h; sourceTree = "<group>"; };
 		06FD907C1CA2553F0041BB50 /* ProvideServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvideServicesViewController.m; sourceTree = "<group>"; };
@@ -167,11 +172,12 @@
 		060A81101C92893E00CAD221 /* wxpalm */ = {
 			isa = PBXGroup;
 			children = (
+				060A812B1C928E9E00CAD221 /* images */,
+				06C95EA11CA8EEAE00779FDA /* html */,
 				06FD90821CA259F00041BB50 /* Profile */,
 				06FD907E1CA2563B0041BB50 /* Cart */,
 				06BD8A681C9BC36F003C15FC /* ProvideServices */,
 				0677425F1C99701600C39680 /* Home */,
-				060A812B1C928E9E00CAD221 /* images */,
 				060A81141C92893E00CAD221 /* AppDelegate.h */,
 				060A81151C92893E00CAD221 /* AppDelegate.m */,
 				060A81171C92893E00CAD221 /* ViewController.h */,
@@ -283,6 +289,8 @@
 				06BA43711CA63923009E4D78 /* ThreeLevelViewController.m */,
 				06BA43691CA63923009E4D78 /* FourLevelViewController.h */,
 				06BA436A1CA63923009E4D78 /* FourLevelViewController.m */,
+				06C95E9E1CA8ED9B00779FDA /* ProductDetailsViewController.h */,
+				06C95E9F1CA8ED9B00779FDA /* ProductDetailsViewController.m */,
 			);
 			path = Mall;
 			sourceTree = "<group>";
@@ -320,6 +328,15 @@
 			);
 			path = ProvideServices;
 			sourceTree = "<group>";
+		};
+		06C95EA11CA8EEAE00779FDA /* html */ = {
+			isa = PBXGroup;
+			children = (
+				06C95EA21CA8EEAE00779FDA /* test.html */,
+			);
+			name = html;
+			path = wxpalm/html;
+			sourceTree = SOURCE_ROOT;
 		};
 		06FD907E1CA2563B0041BB50 /* Cart */ = {
 			isa = PBXGroup;
@@ -403,6 +420,7 @@
 				060A81211C92893E00CAD221 /* LaunchScreen.storyboard in Resources */,
 				06B453E51C97D30300518931 /* 3.jpg in Resources */,
 				06B453EB1C97D30300518931 /* imageInfo.plist in Resources */,
+				06C95EA31CA8EEAE00779FDA /* test.html in Resources */,
 				060A81341C928E9E00CAD221 /* doubleicon.png in Resources */,
 				06BD8A671C9BBFD3003C15FC /* DailyFuncInfo.plist in Resources */,
 				060A81321C928E9E00CAD221 /* clockicon.png in Resources */,
@@ -454,6 +472,7 @@
 				06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */,
 				067742721C99701600C39680 /* TVCellIAMIC.m in Sources */,
 				0677426F1C99701600C39680 /* HomeViewController.m in Sources */,
+				06C95EA01CA8ED9B00779FDA /* ProductDetailsViewController.m in Sources */,
 				06FD90881CA25A3A0041BB50 /* CartViewController.m in Sources */,
 				067742711C99701600C39680 /* TVCellDailyFuncCollection.m in Sources */,
 			);

@@ -7,8 +7,12 @@
 //
 
 #import "FourLevelViewController.h"
+#import "ProductDetailsViewController.h"
 
 @interface FourLevelViewController ()
+{
+    ProductDetailsViewController* _pdController;    // 商品详情
+}
 @property (weak, nonatomic) IBOutlet UILabel *labBarButtonItem;
 
 @end
@@ -18,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 商品详情
+    UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
+    _pdController = [psStoryboard instantiateViewControllerWithIdentifier:@"ProductDetailsViewController"];
+    _pdController.title = @"商品详情";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +74,14 @@
     cell.textLabel.text = strTest;
     
     return  cell;
+}
+
+#pragma mark -
+#pragma mark Table View Delegate Methods
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    
+    [self.navigationController pushViewController:_pdController animated:YES];
 }
 
 @end

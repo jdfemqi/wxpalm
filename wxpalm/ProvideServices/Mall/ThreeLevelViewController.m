@@ -41,6 +41,7 @@
         FourLevelViewController* commodityController = [psStoryboard instantiateViewControllerWithIdentifier:@"FourLevelViewController"];
         
         commodityController.strMotif = obj;
+        commodityController.title = commodityController.strMotif;
         
         [array addObject:commodityController];
     }

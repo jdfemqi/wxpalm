@@ -353,5 +353,50 @@
             </objects>
             <point key="canvasLocation" x="154" y="164"/>
         </scene>
+        <!--Product Details View Controller-->
+        <scene sceneID="Cgm-bo-lqp">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="5AS-r9-h5x" customClass="ProductDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Wl-kB-L7I"/>
+                        <viewControllerLayoutGuide type="bottom" id="WYK-SQ-pUy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BvA-aT-8iA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-YH-wdK">
+                                <rect key="frame" x="279" y="20" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7E-GY-ExS">
+                                <rect key="frame" x="20" y="48.5" width="560" height="551.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5AS-r9-h5x" id="uoB-Zj-Azk"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JjO-YH-wdK" firstAttribute="top" secondItem="4Wl-kB-L7I" secondAttribute="bottom" id="027-9m-Cd3"/>
+                            <constraint firstItem="JjO-YH-wdK" firstAttribute="centerX" secondItem="BvA-aT-8iA" secondAttribute="centerX" id="0e8-Ro-Er9"/>
+                            <constraint firstItem="WYK-SQ-pUy" firstAttribute="top" secondItem="w7E-GY-ExS" secondAttribute="bottom" id="Se1-ww-uwr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w7E-GY-ExS" secondAttribute="trailing" id="Tga-pu-OLw"/>
+                            <constraint firstItem="w7E-GY-ExS" firstAttribute="top" secondItem="JjO-YH-wdK" secondAttribute="bottom" constant="8" id="kEf-3T-ed7"/>
+                            <constraint firstItem="w7E-GY-ExS" firstAttribute="leading" secondItem="BvA-aT-8iA" secondAttribute="leadingMargin" id="ulG-eY-cv3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_labTip" destination="JjO-YH-wdK" id="u1x-Tf-0uy"/>
+                        <outlet property="_webViewDetails" destination="w7E-GY-ExS" id="o93-zf-yVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebl-y6-Kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="235"/>
+        </scene>
     </scenes>
 </document>

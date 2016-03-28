@@ -51,6 +51,7 @@
         commodityController.rowImage = [UIImage imageNamed:strIconName];
         commodityController.strThreeLevelPlist = obj;
         commodityController.arrayThreeLevelPlist = [dicTemp objectForKey:@"nextLevel"];
+        commodityController.title = commodityController.strMotif;
         
         [array addObject:commodityController];
     }

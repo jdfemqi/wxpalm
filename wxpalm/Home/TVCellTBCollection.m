@@ -110,6 +110,9 @@
         pViewController = _IntegratedMall;
     }
     
+    // 设置nav bar标题
+    pViewController.title = [dicTemp objectForKey:@"motif"];
+    
     // 加入navigationController显示
     UIViewController* pSuperViewControll = nil;
     for (UIView* next = self.superview; next; next = next.superview) {

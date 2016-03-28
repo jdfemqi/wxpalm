@@ -52,6 +52,7 @@
          NSString* strIconName =[dicTemp objectForKey:@"iconName"];
          commodityController.rowImage = [UIImage imageNamed:strIconName];
          commodityController.strThreeLevelPlist = obj;
+         commodityController.title = commodityController.strMotif;
          
          [array addObject:commodityController];
      }
