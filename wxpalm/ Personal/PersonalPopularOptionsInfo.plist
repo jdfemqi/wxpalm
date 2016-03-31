@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CommodityCollection</key>
+	<dict>
+		<key>motif</key>
+		<string>宝贝收藏</string>
+		<key>iconName</key>
+		<string>work.png</string>
+	</dict>
+	<key>Cart</key>
+	<dict>
+		<key>motif</key>
+		<string>购物车</string>
+		<key>iconName</key>
+		<string>toolicon.png</string>
+	</dict>
+	<key>AccountManagement</key>
+	<dict>
+		<key>motif</key>
+		<string>账户管理</string>
+		<key>iconName</key>
+		<string>home.png</string>
+	</dict>
+	<key>FICO</key>
+	<dict>
+		<key>motif</key>
+		<string>财务管理</string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+	</dict>
+	<key>OrderManagement</key>
+	<dict>
+		<key>motif</key>
+		<string>订单管理</string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+	</dict>
+</dict>
+</plist>

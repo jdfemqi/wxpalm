@@ -303,13 +303,13 @@
                                             <action selector="btPress:" destination="DcU-P1-iRo" id="n8K-Ao-nWW"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="5GZ-gO-CnL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YdN-vS-vwK"/>
                                     <barButtonItem title="销量" id="xqR-6T-StO">
                                         <connections>
                                             <action selector="btPress:" destination="DcU-P1-iRo" id="Uy7-Mb-ZTY"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Xws-cS-6VB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kBy-en-iUd"/>
                                     <barButtonItem title="上架时间" id="bEo-VX-WRZ">
                                         <connections>
                                             <action selector="btPress:" destination="DcU-P1-iRo" id="DQx-5c-UJo"/>
