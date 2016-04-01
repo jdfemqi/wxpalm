@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060152471CACEA7400064915 /* HealthTourismViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060152461CACEA7400064915 /* HealthTourismViewController.m */; };
+		0601524A1CACED9800064915 /* TourismTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 060152491CACED9800064915 /* TourismTableViewCell.m */; };
 		0609F8511CAA3AE30004E8FA /* ProvSerCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609F8501CAA3AE30004E8FA /* ProvSerCollectionCell.m */; };
 		0609F8541CAA45900004E8FA /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609F8531CAA45900004E8FA /* PersonalViewController.m */; };
 		060A81131C92893E00CAD221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 060A81121C92893E00CAD221 /* main.m */; };
@@ -62,6 +64,7 @@
 		06CBC7791CABF50C00A84AC6 /* ToolBarItemOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CBC7781CABF50C00A84AC6 /* ToolBarItemOrderInfo.m */; };
 		06D28FF21CAB8C1E00365D75 /* PopularOptionsCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D28FF11CAB8C1E00365D75 /* PopularOptionsCollectionCell.m */; };
 		06D28FF41CAB8D1900365D75 /* PersonalPopularOptionsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06D28FF31CAB8D1900365D75 /* PersonalPopularOptionsInfo.plist */; };
+		06DF76C91CAE300B00833AC1 /* HealthTourismInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06DF76C81CAE300B00833AC1 /* HealthTourismInfo.plist */; };
 		06F073461CA94B6D00BB9436 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0733B1CA94B6D00BB9436 /* FMDatabase.m */; };
 		06F073471CA94B6D00BB9436 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0733D1CA94B6D00BB9436 /* FMDatabaseAdditions.m */; };
 		06F073481CA94B6D00BB9436 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0733F1CA94B6D00BB9436 /* FMDatabasePool.m */; };
@@ -75,6 +78,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060152451CACEA7400064915 /* HealthTourismViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthTourismViewController.h; sourceTree = "<group>"; };
+		060152461CACEA7400064915 /* HealthTourismViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthTourismViewController.m; sourceTree = "<group>"; };
+		060152481CACED9800064915 /* TourismTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourismTableViewCell.h; sourceTree = "<group>"; };
+		060152491CACED9800064915 /* TourismTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourismTableViewCell.m; sourceTree = "<group>"; };
 		0609F84F1CAA3AE30004E8FA /* ProvSerCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvSerCollectionCell.h; sourceTree = "<group>"; };
 		0609F8501CAA3AE30004E8FA /* ProvSerCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvSerCollectionCell.m; sourceTree = "<group>"; };
 		0609F8521CAA45900004E8FA /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonalViewController.h; path = " Personal/PersonalViewController.h"; sourceTree = "<group>"; };
@@ -153,6 +160,7 @@
 		06D28FF01CAB8C1E00365D75 /* PopularOptionsCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopularOptionsCollectionCell.h; path = " Personal/PopularOptionsCollectionCell.h"; sourceTree = "<group>"; };
 		06D28FF11CAB8C1E00365D75 /* PopularOptionsCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopularOptionsCollectionCell.m; path = " Personal/PopularOptionsCollectionCell.m"; sourceTree = "<group>"; };
 		06D28FF31CAB8D1900365D75 /* PersonalPopularOptionsInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PersonalPopularOptionsInfo.plist; path = " Personal/PersonalPopularOptionsInfo.plist"; sourceTree = "<group>"; };
+		06DF76C81CAE300B00833AC1 /* HealthTourismInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HealthTourismInfo.plist; sourceTree = "<group>"; };
 		06EB6ABF1C9FBC5600FBC6A1 /* macroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macroDefine.h; sourceTree = "<group>"; };
 		06F0733A1CA94B6D00BB9436 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		06F0733B1CA94B6D00BB9436 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -188,6 +196,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060152441CACEA5700064915 /* HealthTourism */ = {
+			isa = PBXGroup;
+			children = (
+				06DF76C81CAE300B00833AC1 /* HealthTourismInfo.plist */,
+				060152451CACEA7400064915 /* HealthTourismViewController.h */,
+				060152461CACEA7400064915 /* HealthTourismViewController.m */,
+				060152481CACED9800064915 /* TourismTableViewCell.h */,
+				060152491CACED9800064915 /* TourismTableViewCell.m */,
+			);
+			path = HealthTourism;
+			sourceTree = "<group>";
+		};
 		060A81051C92893E00CAD221 = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +376,7 @@
 		06BD8A681C9BC36F003C15FC /* ProvideServices */ = {
 			isa = PBXGroup;
 			children = (
+				060152441CACEA5700064915 /* HealthTourism */,
 				06BA437B1CA6395D009E4D78 /* CareersService */,
 				06BA43621CA63923009E4D78 /* Mall */,
 				06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */,
@@ -508,6 +529,7 @@
 				06BA43751CA63923009E4D78 /* CommodityHealthProducts.plist in Resources */,
 				060A811C1C92893E00CAD221 /* Main.storyboard in Resources */,
 				06B453E71C97D30300518931 /* 5.jpg in Resources */,
+				06DF76C91CAE300B00833AC1 /* HealthTourismInfo.plist in Resources */,
 				06B453E31C97D30300518931 /* 1.jpg in Resources */,
 				06BA43741CA63923009E4D78 /* CommodityFoods.plist in Resources */,
 				06B453E61C97D30300518931 /* 4.jpg in Resources */,
@@ -528,6 +550,7 @@
 				060A81191C92893E00CAD221 /* ViewController.m in Sources */,
 				060A81161C92893E00CAD221 /* AppDelegate.m in Sources */,
 				06F0734A1CA94B6D00BB9436 /* FMResultSet.m in Sources */,
+				0601524A1CACED9800064915 /* TourismTableViewCell.m in Sources */,
 				06CBC7791CABF50C00A84AC6 /* ToolBarItemOrderInfo.m in Sources */,
 				06F073501CA95BA200BB9436 /* CellShoppingList.m in Sources */,
 				060A81131C92893E00CAD221 /* main.m in Sources */,
@@ -542,6 +565,7 @@
 				06F073481CA94B6D00BB9436 /* FMDatabasePool.m in Sources */,
 				06BA43731CA63923009E4D78 /* CellMallCommodity.m in Sources */,
 				06BA43761CA63923009E4D78 /* FourLevelViewController.m in Sources */,
+				060152471CACEA7400064915 /* HealthTourismViewController.m in Sources */,
 				0677426E1C99701600C39680 /* HomeTBCollectionViewCell.m in Sources */,
 				06BA437E1CA6395D009E4D78 /* CareersServiceViewController.m in Sources */,
 				06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */,

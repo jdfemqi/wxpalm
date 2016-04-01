@@ -2,6 +2,84 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>HydropowerPayment</key>
+	<dict>
+		<key>motif</key>
+		<string>水电缴费</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>work.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>AddCredit</key>
+	<dict>
+		<key>motif</key>
+		<string>手机充值</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>CreditCardPayment</key>
+	<dict>
+		<key>motif</key>
+		<string>信用卡还款</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>HealthTourism</key>
+	<dict>
+		<key>motif</key>
+		<string>养生旅游</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>IntegratedMall</key>
+	<dict>
+		<key>motif</key>
+		<string>综合商城</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>CommunitySupermarket</key>
+	<dict>
+		<key>motif</key>
+		<string>社区超市</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>home.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
 	<key>CareersService</key>
 	<dict>
 		<key>motif</key>
@@ -15,7 +93,7 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	<key>2</key>
+	<key>AgingInPlace</key>
 	<dict>
 		<key>motif</key>
 		<string>居家养老</string>
@@ -28,23 +106,10 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	<key>3</key>
+	<key>TicketOrdering</key>
 	<dict>
 		<key>motif</key>
-		<string>社区超市</string>
-		<key>briefDes</key>
-		<string></string>
-		<key>iconName</key>
-		<string>home.png</string>
-		<key>iconName2</key>
-		<string></string>
-		<key>pviewController</key>
-		<data></data>
-	</dict>
-	<key>IntegratedMall</key>
-	<dict>
-		<key>motif</key>
-		<string>商城</string>
+		<string>火车票</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -54,10 +119,10 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	<key>5</key>
+	<key>AirTicketOrdering</key>
 	<dict>
 		<key>motif</key>
-		<string>商城</string>
+		<string>机票</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -67,10 +132,10 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	<key>6</key>
+	<key>IntegralLuckyDraw</key>
 	<dict>
 		<key>motif</key>
-		<string>商城</string>
+		<string>积分抽奖</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -80,10 +145,10 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	<key>Integral exchange</key>
+	<key>HotelBooking</key>
 	<dict>
 		<key>motif</key>
-		<string>积分换购</string>
+		<string>酒店</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -93,5 +158,58 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
+	<key>MyCollection</key>
+	<dict>
+		<key>motif</key>
+		<string>我的收藏</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>IntegralExchange</key>
+	<dict>
+		<key>motif</key>
+		<string>积分兑换</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>AttractionsTickets</key>
+	<dict>
+		<key>motif</key>
+		<string>景点门票</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	<key>DevelopmentMessage</key>
+	<dict>
+		<key>motif</key>
+		<string>开发消息</string>
+		<key>briefDes</key>
+		<string></string>
+		<key>iconName</key>
+		<string>doubleicon.png</string>
+		<key>iconName2</key>
+		<string></string>
+		<key>pviewController</key>
+		<data></data>
+	</dict>
+	
 </dict>
 </plist>

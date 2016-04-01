@@ -10,6 +10,6 @@
 
 
 @interface HomeDFCollectionViewCell : UICollectionViewCell
-
+@property(nonatomic,weak) NSString* _strKey;
 -(void)updateView:(NSMutableDictionary*)dicTemp;
 @end

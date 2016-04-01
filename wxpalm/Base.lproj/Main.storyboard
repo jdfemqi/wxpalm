@@ -332,17 +332,8 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstItem="g0K-Iv-jrS" firstAttribute="top" secondItem="mYg-N6-EkW" secondAttribute="topMargin" constant="4" id="FeO-NJ-bDf"/>
-                                                                <constraint firstAttribute="bottomMargin" secondItem="g0K-Iv-jrS" secondAttribute="bottom" constant="2" id="U1O-4D-5s8"/>
-                                                                <constraint firstItem="g0K-Iv-jrS" firstAttribute="leading" secondItem="mYg-N6-EkW" secondAttribute="leadingMargin" id="baG-02-vwZ"/>
+                                                                <constraint firstItem="g0K-Iv-jrS" firstAttribute="centerY" secondItem="mYg-N6-EkW" secondAttribute="centerY" id="m07-ye-Rri"/>
                                                             </constraints>
-                                                            <variation key="default">
-                                                                <mask key="constraints">
-                                                                    <exclude reference="FeO-NJ-bDf"/>
-                                                                    <exclude reference="U1O-4D-5s8"/>
-                                                                    <exclude reference="baG-02-vwZ"/>
-                                                                </mask>
-                                                            </variation>
                                                             <connections>
                                                                 <outlet property="_iconFunc" destination="g0K-Iv-jrS" id="VDd-MA-7rv"/>
                                                                 <outlet property="_lbMotif" destination="6Cx-xe-Xrj" id="yj3-Lv-vy9"/>
