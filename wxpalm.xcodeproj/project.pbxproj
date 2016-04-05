@@ -59,6 +59,10 @@
 		06BD8A6A1C9BC391003C15FC /* ProvideServicesInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */; };
 		06BD8A6C1C9BC41F003C15FC /* ProvideServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */; };
 		06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2063E1C9E8D64009A0915 /* RootViewController.m */; };
+		06C7E2111CAFB8DC001390CB /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C7E2101CAFB8DC001390CB /* KxMenu.m */; };
+		06C7E2131CAFBA42001390CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C7E2121CAFBA42001390CB /* CoreGraphics.framework */; };
+		06C7E2151CAFBA54001390CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C7E2141CAFBA54001390CB /* UIKit.framework */; };
+		06C7E2171CAFBA5E001390CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C7E2161CAFBA5E001390CB /* Foundation.framework */; };
 		06C95EA01CA8ED9B00779FDA /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C95E9F1CA8ED9B00779FDA /* ProductDetailsViewController.m */; };
 		06C95EA31CA8EEAE00779FDA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 06C95EA21CA8EEAE00779FDA /* test.html */; };
 		06CBC7791CABF50C00A84AC6 /* ToolBarItemOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CBC7781CABF50C00A84AC6 /* ToolBarItemOrderInfo.m */; };
@@ -152,6 +156,11 @@
 		06BD8A6B1C9BC41F003C15FC /* ProvideServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProvideServices.storyboard; sourceTree = "<group>"; };
 		06C2063D1C9E8D64009A0915 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		06C2063E1C9E8D64009A0915 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		06C7E20F1CAFB8DC001390CB /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		06C7E2101CAFB8DC001390CB /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		06C7E2121CAFBA42001390CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06C7E2141CAFBA54001390CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06C7E2161CAFBA5E001390CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06C95E9E1CA8ED9B00779FDA /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
 		06C95E9F1CA8ED9B00779FDA /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
 		06C95EA21CA8EEAE00779FDA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -188,6 +197,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C7E2171CAFBA5E001390CB /* Foundation.framework in Frameworks */,
+				06C7E2151CAFBA54001390CB /* UIKit.framework in Frameworks */,
+				06C7E2131CAFBA42001390CB /* CoreGraphics.framework in Frameworks */,
 				06F0734D1CA94EDD00BB9436 /* libsqlite3.tbd in Frameworks */,
 				067742701C99701600C39680 /* IAMIC.framework in Frameworks */,
 			);
@@ -211,7 +223,12 @@
 		060A81051C92893E00CAD221 = {
 			isa = PBXGroup;
 			children = (
+				06C7E2161CAFBA5E001390CB /* Foundation.framework */,
+				06C7E2141CAFBA54001390CB /* UIKit.framework */,
+				06C7E2121CAFBA42001390CB /* CoreGraphics.framework */,
 				06F0734C1CA94EDD00BB9436 /* libsqlite3.tbd */,
+				06C7E20E1CAFB8DC001390CB /* KxMenu */,
+				06F073391CA94B6D00BB9436 /* fmdb */,
 				060A81101C92893E00CAD221 /* wxpalm */,
 				060A810F1C92893E00CAD221 /* Products */,
 			);
@@ -228,7 +245,6 @@
 		060A81101C92893E00CAD221 /* wxpalm */ = {
 			isa = PBXGroup;
 			children = (
-				06F073391CA94B6D00BB9436 /* fmdb */,
 				060A812B1C928E9E00CAD221 /* images */,
 				06C95EA11CA8EEAE00779FDA /* html */,
 				06FD90821CA259F00041BB50 /*  Personal */,
@@ -389,6 +405,15 @@
 			path = ProvideServices;
 			sourceTree = "<group>";
 		};
+		06C7E20E1CAFB8DC001390CB /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				06C7E20F1CAFB8DC001390CB /* KxMenu.h */,
+				06C7E2101CAFB8DC001390CB /* KxMenu.m */,
+			);
+			path = KxMenu;
+			sourceTree = "<group>";
+		};
 		06C95EA11CA8EEAE00779FDA /* html */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +572,7 @@
 				06BA437A1CA63923009E4D78 /* ThreeLevelViewController.m in Sources */,
 				06BA43791CA63923009E4D78 /* SecondLevelViewController.m in Sources */,
 				067742731C99701600C39680 /* TVCellTBCollection.m in Sources */,
+				06C7E2111CAFB8DC001390CB /* KxMenu.m in Sources */,
 				060A81191C92893E00CAD221 /* ViewController.m in Sources */,
 				060A81161C92893E00CAD221 /* AppDelegate.m in Sources */,
 				06F0734A1CA94B6D00BB9436 /* FMResultSet.m in Sources */,

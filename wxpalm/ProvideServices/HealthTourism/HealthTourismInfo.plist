@@ -18,6 +18,13 @@
 				<string>$999.00</string>
 				<key>image</key>
 				<string>work.png</string>
+				<key>classification</key>
+				<dict>
+					<key>tag</key>
+					<string>1</string>
+					<key>motif</key>
+					<string>冬季温养 固精养气</string>
+				</dict>
 			</dict>
 			<key>2</key>
 			<dict>
@@ -29,6 +36,13 @@
 				<string>$1380.00</string>
 				<key>image</key>
 				<string>work.png</string>
+				<key>classification</key>
+				<dict>
+					<key>tag</key>
+					<string>2</string>
+					<key>motif</key>
+					<string>适合老年专线</string>
+				</dict>
 			</dict>
 			<key>3</key>
 			<dict>
@@ -40,6 +54,13 @@
 				<string>$1680.00</string>
 				<key>image</key>
 				<string>work.png</string>
+				<key>classification</key>
+				<dict>
+					<key>tag</key>
+					<string>3</string>
+					<key>motif</key>
+					<string>养生养老 基地游</string>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
@@ -59,6 +80,13 @@
 				<string>$6580.00</string>
 				<key>image</key>
 				<string>work.png</string>
+				<key>classification</key>
+				<dict>
+					<key>tag</key>
+					<string>4</string>
+					<key>motif</key>
+					<string>春暖花开 万物复苏</string>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
@@ -78,6 +106,13 @@
 				<string>$3080.00</string>
 				<key>image</key>
 				<string>work.png</string>
+				<key>classification</key>
+				<dict>
+					<key>tag</key>
+					<string>5</string>
+					<key>motif</key>
+					<string>秋高气爽 结伴而行</string>
+				</dict>
 			</dict>
 		</dict>
 	</dict>

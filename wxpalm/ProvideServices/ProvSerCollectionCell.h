@@ -10,6 +10,7 @@
 
 @interface ProvSerCollectionCell : UICollectionViewCell
 
+@property(nonatomic,weak) NSString* _strKey;                // 主key
 @property(nonatomic,weak)IBOutlet UIImageView *ivPSCell;     // 图标
 @property(nonatomic,weak)IBOutlet UILabel *_labMotif;     // 主题
 

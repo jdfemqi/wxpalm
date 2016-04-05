@@ -85,45 +85,12 @@
     cell.backgroundColor = [UIColor whiteColor];
     
     NSString* strKey = cell._strKey;
-    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
-
-    UIViewController* pViewController = nil;
     
-    // 就业服务
-    if([strKey isEqualToString:PSCareersService])
-    {
-        if ( _csViewController == nil)
-        {
-            UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
-             _csViewController = [psStoryboard instantiateViewControllerWithIdentifier:@"PSCareersService"];
-        }
-        
-        pViewController = _csViewController;
-    }
-    else if ([strKey isEqualToString:PSIntegratedMall])  // 综合商城
-    {
-        if (_IntegratedMall == nil) {
-            UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
-            _IntegratedMall = [psStoryboard instantiateViewControllerWithIdentifier:@"IntegratedMallViewController"];
-        }
-        
-        pViewController = _IntegratedMall;
-    }
+    //创建一个消息对象
+    NSNotification * notice = [NSNotification notificationWithName:@"ProvideServices" object:nil userInfo:@{@"1":strKey}];
     
-    // 设置nav bar标题
-    pViewController.title = [dicTemp objectForKey:@"motif"];
-    
-    // 加入navigationController显示
-    UIViewController* pSuperViewControll = nil;
-    for (UIView* next = self.superview; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            pSuperViewControll = (UIViewController*)nextResponder;
-            break;
-        }
-    }
-    
-    [pSuperViewControll.navigationController pushViewController:pViewController animated:YES];
+    //发送消息
+    [[NSNotificationCenter defaultCenter]postNotification:notice];
 }
 
 @end

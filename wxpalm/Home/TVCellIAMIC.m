@@ -22,10 +22,6 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    
-    //[super awakeFromNib];
-    //self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -41,16 +37,15 @@
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"imageInfo" ofType:@"plist"];
     NSString*  _resourcePath =  [[NSBundle mainBundle]resourcePath];
     
-    //CGSize szFrame = self.frame.size;
-    
     // Row在tableView中的区域
     CGRect rectInTableView = [tableView rectForRowAtIndexPath:indexPath];
     CGSize szCell = rectInTableView.size;
-    CGRect rc = CGRectMake(rectInTableView.origin.x, 0, szCell.width, szCell.height);
+    CGRect rc = CGRectMake(rectInTableView.origin.x, 4, szCell.width, szCell.height);
     
     _iamic = [[IAMICObject alloc]init];
     [_iamic setResourcePath:_plistPath :_resourcePath];
     [_iamic setConfigure:self.contentView :rc];
+    [_iamic shouldAutoShow:TRUE];
 }
 
 @end

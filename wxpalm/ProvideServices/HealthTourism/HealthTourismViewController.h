@@ -10,4 +10,7 @@
 
 @interface HealthTourismViewController : UIViewController
 
+// 按分类筛选
+-(IBAction)btnPressClassificationScreening:(id)sender;
+
 @end
