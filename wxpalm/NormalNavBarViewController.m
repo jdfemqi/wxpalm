@@ -1,24 +1,33 @@
 //
-//  CareersServiceViewController.m
+//  NormalNavBarViewController.m
 //  wxpalm
 //
-//  Created by qiujian on 16/3/18.
+//  Created by qiujian on 16/4/8.
 //  Copyright © 2016年 jdfemqi. All rights reserved.
-//  就业服务
+//
 
-#import "CareersServiceViewController.h"
-#import "../../macroDefine.h"
+#import "NormalNavBarViewController.h"
 
-@interface CareersServiceViewController ()
+static UINavigationController* _navBarController = nil;
+
+@interface NormalNavBarViewController ()
+{
+    __weak IBOutlet UILabel *labTitle;
+}
 
 @end
 
-@implementation CareersServiceViewController
+@implementation NormalNavBarViewController
 
++(void)configNavBarController:(UINavigationController*)navBarController
+{
+    if (_navBarController == nil) {
+        _navBarController = navBarController;
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,5 +45,9 @@
 }
 */
 
+-(IBAction)btBackPress:(id)sender
+{
+    [_navBarController popViewControllerAnimated:YES];
+}
 
 @end

@@ -13,6 +13,7 @@
 @interface HomeTBCollectionViewCell : UICollectionViewCell
 
 @property(nonatomic,weak) NSString* _strKey;
+@property(nonatomic,weak) NSString* _strMotifBackGroundImage;
 @property(nonatomic,weak)IBOutlet UILabel *lbHomeTBCell;
 @property(nonatomic,weak)IBOutlet UIImageView *ivHomeTBCell;
 

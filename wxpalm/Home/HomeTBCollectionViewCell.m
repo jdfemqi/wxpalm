@@ -13,14 +13,15 @@
 
 -(void)updateView:(NSMutableDictionary*)dicTemp
 {
-    self.backgroundColor = [UIColor redColor];
+    //self.backgroundColor = [UIColor redColor];
     
     // UILabel设置背景图片
-    // UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"itemkaung2.png"]];
-    //[cell.lbHomeTBCell setBackgroundColor:color];
+     UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:self._strMotifBackGroundImage]];
+    [self.lbHomeTBCell setBackgroundColor:color];
     
     // UILabel文本
     self.lbHomeTBCell.text = [dicTemp objectForKey:provideServiceMotif];
+   // self.lbHomeTBCell.backgroundColor = self._clrMotif;
     
     // 图标
     NSString *strImageName = [dicTemp objectForKey:provideServiceIconName];

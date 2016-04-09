@@ -18,9 +18,6 @@
     NSMutableDictionary* _homeTBData;// ToolBar中的常用功能显示数据
     
     NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
-    
-    CareersServiceViewController* _csViewController;    // 就业服务
-    IntegratedMallViewController* _IntegratedMall;// 综合商城
 }
 @end
 
@@ -35,9 +32,6 @@
     
     NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
     _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
-    
-    _csViewController = nil;
-    _IntegratedMall = nil;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -45,7 +39,6 @@
 
     // Configure the view for the selected state
 }
-
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -71,10 +64,41 @@
     
     cell._strKey = strKey;
     
+    NSString* backGround = nil;
+    switch (nRow) {
+        case 0:
+            backGround = @"Home.png";
+            break;
+            
+        case 1:
+            backGround = @"Home.png";
+            break;
+            
+        case 2:
+            backGround = @"Home.png";
+            break;
+            
+        case 3:
+            backGround = @"Home.png";
+            break;
+            
+        default:
+            break;
+    }
+    cell._strMotifBackGroundImage = backGround;
+    cell.backgroundColor = [UIColor whiteColor];
+    
     // 更新Cell的显示
     [cell updateView:dicTemp];
     
     return cell;
+}
+
+// 定义cell大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize szFrame = collectionView.frame.size;
+    return CGSizeMake((szFrame.width - 3*2)/4 - 2, 60);
 }
 
 #pragma mark <UICollectionViewDelegate>

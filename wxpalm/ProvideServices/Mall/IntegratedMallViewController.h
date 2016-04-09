@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShowNormalNavBarViewController.h"
 
-@interface IntegratedMallViewController : UITableViewController
+@interface IntegratedMallViewController : ShowNormalNavBarViewController
 
 @end

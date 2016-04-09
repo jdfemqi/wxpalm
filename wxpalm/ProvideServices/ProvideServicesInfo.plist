@@ -6,6 +6,8 @@
 	<dict>
 		<key>motif</key>
 		<string>水电缴费</string>
+		<key>title</key>
+		<string>水电煤</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>motif</key>
 		<string>手机充值</string>
+		<key>title</key>
+		<string>便民充值中心</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -31,6 +35,8 @@
 	<key>CreditCardPayment</key>
 	<dict>
 		<key>motif</key>
+		<string>信用卡还款</string>
+		<key>title</key>
 		<string>信用卡还款</string>
 		<key>briefDes</key>
 		<string></string>
@@ -45,6 +51,8 @@
 	<dict>
 		<key>motif</key>
 		<string>养生旅游</string>
+		<key>title</key>
+		<string>养生旅游</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -58,6 +66,8 @@
 	<dict>
 		<key>motif</key>
 		<string>综合商城</string>
+		<key>title</key>
+		<string>微行掌商城</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -70,6 +80,8 @@
 	<key>CommunitySupermarket</key>
 	<dict>
 		<key>motif</key>
+		<string>社区超市</string>
+		<key>title</key>
 		<string>社区超市</string>
 		<key>briefDes</key>
 		<string></string>
@@ -84,6 +96,8 @@
 	<dict>
 		<key>motif</key>
 		<string>就业服务</string>
+		<key>title</key>
+		<string></string>
 		<key>briefDes</key>
 		<string>找工作</string>
 		<key>iconName</key>
@@ -97,6 +111,8 @@
 	<dict>
 		<key>motif</key>
 		<string>居家养老</string>
+		<key>title</key>
+		<string></string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -110,6 +126,8 @@
 	<dict>
 		<key>motif</key>
 		<string>火车票</string>
+		<key>title</key>
+		<string>微行掌火车票</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -123,6 +141,8 @@
 	<dict>
 		<key>motif</key>
 		<string>机票</string>
+		<key>title</key>
+		<string>微行掌旅行</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -135,6 +155,8 @@
 	<key>IntegralLuckyDraw</key>
 	<dict>
 		<key>motif</key>
+		<string>积分抽奖</string>
+		<key>title</key>
 		<string>积分抽奖</string>
 		<key>briefDes</key>
 		<string></string>
@@ -149,6 +171,8 @@
 	<dict>
 		<key>motif</key>
 		<string>酒店</string>
+		<key>title</key>
+		<string>酒店查询</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -162,6 +186,8 @@
 	<dict>
 		<key>motif</key>
 		<string>我的收藏</string>
+		<key>title</key>
+		<string>宝贝收藏</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -174,6 +200,8 @@
 	<key>IntegralExchange</key>
 	<dict>
 		<key>motif</key>
+		<string>积分兑换</string>
+		<key>title</key>
 		<string>积分兑换</string>
 		<key>briefDes</key>
 		<string></string>
@@ -188,6 +216,8 @@
 	<dict>
 		<key>motif</key>
 		<string>景点门票</string>
+		<key>title</key>
+		<string>景点门票</string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -201,6 +231,8 @@
 	<dict>
 		<key>motif</key>
 		<string>开发消息</string>
+		<key>title</key>
+		<string></string>
 		<key>briefDes</key>
 		<string></string>
 		<key>iconName</key>
@@ -210,6 +242,5 @@
 		<key>pviewController</key>
 		<data></data>
 	</dict>
-	
 </dict>
 </plist>

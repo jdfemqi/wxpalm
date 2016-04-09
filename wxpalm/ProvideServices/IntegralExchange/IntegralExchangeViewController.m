@@ -1,24 +1,21 @@
 //
-//  CareersServiceViewController.m
+//  IntegralExchangeViewController.m
 //  wxpalm
 //
-//  Created by qiujian on 16/3/18.
+//  Created by qiujian on 16/4/6.
 //  Copyright © 2016年 jdfemqi. All rights reserved.
-//  就业服务
+//
 
-#import "CareersServiceViewController.h"
-#import "../../macroDefine.h"
+#import "IntegralExchangeViewController.h"
 
-@interface CareersServiceViewController ()
-
+@interface IntegralExchangeViewController ()
 @end
 
-@implementation CareersServiceViewController
+@implementation IntegralExchangeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +32,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

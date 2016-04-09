@@ -1,24 +1,22 @@
 //
-//  CareersServiceViewController.m
+//  AttractionsTicketsViewController.m
 //  wxpalm
 //
-//  Created by qiujian on 16/3/18.
+//  Created by qiujian on 16/4/9.
 //  Copyright © 2016年 jdfemqi. All rights reserved.
-//  就业服务
+//
 
-#import "CareersServiceViewController.h"
-#import "../../macroDefine.h"
+#import "AttractionsTicketsViewController.h"
 
-@interface CareersServiceViewController ()
+@interface AttractionsTicketsViewController ()
 
 @end
 
-@implementation CareersServiceViewController
+@implementation AttractionsTicketsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

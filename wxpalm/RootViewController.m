@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "NormalNavBarViewController.h"
 
 @interface RootViewController ()
 
@@ -18,23 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // 背景透明
-    UINavigationBar* navBar = self.navigationController.navigationBar;
-    if ([navBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
-        
-        [navBar setBackgroundImage:[UIImage imageNamed:@"Home.png"] forBarMetrics:UIBarMetricsDefault];
-    }
+    // navBar配置
+    [NormalNavBarViewController configNavBarController:self.navigationController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController.navigationBar setHidden:TRUE];
 }
 
 /*

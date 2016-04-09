@@ -7,8 +7,9 @@
 //  商品结构三级
 
 #import <UIKit/UIKit.h>
+#import "ShowNormalNavBarViewController.h"
 
-@interface ThreeLevelViewController : UIViewController
+@interface ThreeLevelViewController : ShowNormalNavBarViewController
 
 @property (nonatomic, retain)NSString* strMotif;     // 主题
 @property (nonatomic, retain)NSString* strBriefDes;     // 简介

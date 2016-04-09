@@ -7,8 +7,9 @@
 //  商品结构二级
 
 #import <UIKit/UIKit.h>
+#import "ShowNormalNavBarViewController.h"
 
-@interface SecondLevelViewController : UITableViewController
+@interface SecondLevelViewController : ShowNormalNavBarViewController
 
 @property (nonatomic, retain)NSString* strMotif;     // 主题
 @property (nonatomic, retain)NSString* strBriefDes;     // 简介

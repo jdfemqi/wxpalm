@@ -7,8 +7,9 @@
 //  商品四级分类
 
 #import <UIKit/UIKit.h>
+#import "ShowNormalNavBarViewController.h"
 
-@interface FourLevelViewController : UIViewController
+@interface FourLevelViewController : ShowNormalNavBarViewController
 
 @property (nonatomic, retain)NSString* strMotif;     // 主题
 

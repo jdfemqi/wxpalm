@@ -14,9 +14,6 @@
 @interface TVCellDailyFuncCollection()
 {
     NSMutableDictionary* _DailyFuncData;// ToolBar中的常用功能显示数据
-    NSMutableDictionary* _provideSerivcesInfo;// 提供的所有服务信息
-    
-    HealthTourismViewController* _HTViewController;
 }
 @end
 
@@ -24,14 +21,10 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    _HTViewController = nil;
+    
     // 读取程序包中的资源文件
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"DailyFuncInfo" ofType:@"plist"];
     _DailyFuncData = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
-    
-    
-    NSString* _pProvideSerInfoPath = [[NSBundle mainBundle]pathForResource:@"ProvideServicesInfo" ofType:@"plist"];
-    _provideSerivcesInfo = [NSMutableDictionary dictionaryWithContentsOfFile:_pProvideSerInfoPath];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -56,15 +49,44 @@
     static NSString * CellIdentifier = @"HomeDFCollectionCell";
     HomeDFCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor redColor];
+    UIColor* backGround = nil;
+    NSInteger nRow = [indexPath row];
+    switch (nRow) {
+        case 0:
+            backGround = [UIColor colorWithRed:255.0f/255.0f green:203.0f/255.0f blue:0.0f/255.0f alpha:1.0];
+            break;
+            
+            case 1:
+            backGround = [UIColor colorWithRed:86.0f/255.0f green:149.0f/255.0f blue:255.0f/255.0f alpha:1.0];
+            break;
+            
+            case 2:
+            backGround = [UIColor colorWithRed:190.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0];
+            break;
+            
+            case 3:
+            backGround = [UIColor colorWithRed:81.0f/255.0f green:223.0f/255.0f blue:170.0f/255.0f alpha:1.0];
+            break;
+            
+            case 4:
+            backGround = [UIColor colorWithRed:255.0f/255.0f green:185.0f/255.0f blue:255.0f/255.0f alpha:1.0];
+            break;
+            
+            case 5:
+            backGround = [UIColor colorWithRed:161.0f/255.0f green:250.0f/255.0f blue:255.0f/255.0f alpha:1.0];
+            break;
+            
+        default:
+            break;
+    }
+    cell.backgroundColor = backGround;
     
     // 获取对应描述
-    NSInteger nRow = [indexPath row];
     NSArray* dfKeys = [_DailyFuncData allKeys];
     NSArray* sortKeys = [dfKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    NSString* strKey = [_DailyFuncData objectForKey:sortKeys[nRow]];
+    NSString* strKey = sortKeys[nRow];
     
-    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
+    NSMutableDictionary* dicTemp = [_DailyFuncData objectForKey:strKey];
     cell._strKey = strKey;
     // 更新Cell的显示
     [cell updateView:dicTemp];
@@ -76,7 +98,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGSize szFrame = collectionView.frame.size;
-    return CGSizeMake((szFrame.width - 16)/2 - 2, 60);
+    return CGSizeMake((szFrame.width)/2 - 2, 60);
 }
 
 #pragma mark <UICollectionViewDelegate>
@@ -87,36 +109,12 @@
     cell.backgroundColor = [UIColor whiteColor];
     
     NSString* strKey = cell._strKey;
-    NSMutableDictionary* dicTemp = [_provideSerivcesInfo objectForKey:strKey];
     
-    UIViewController* pViewController = nil;
+    //创建一个消息对象
+    NSNotification * notice = [NSNotification notificationWithName:@"ProvideServices" object:nil userInfo:@{@"1":strKey}];
     
-    // 养生旅游
-    if([strKey isEqualToString:PSHealthTourism])
-    {
-        if ( _HTViewController == nil)
-        {
-            UIStoryboard* psStoryboard = [UIStoryboard storyboardWithName:@"ProvideServices" bundle:nil];
-            _HTViewController = [psStoryboard instantiateViewControllerWithIdentifier:@"HealthTourismViewController"];
-        }
-        
-        pViewController = _HTViewController;
-    }
-    
-    // 设置nav bar标题
-    pViewController.title = [dicTemp objectForKey:@"motif"];
-    
-    // 加入navigationController显示
-    UIViewController* pSuperViewControll = nil;
-    for (UIView* next = self.superview; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            pSuperViewControll = (UIViewController*)nextResponder;
-            break;
-        }
-    }
-    
-    [pSuperViewControll.navigationController pushViewController:pViewController animated:YES];
+    //发送消息
+    [[NSNotificationCenter defaultCenter]postNotification:notice];
 }
 
 @end
