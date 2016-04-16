@@ -65,7 +65,7 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-57-7ab">
                                 <rect key="frame" x="20" y="133" width="560" height="410"/>
-                                <color key="backgroundColor" red="0.83666325399999997" green="1" blue="0.62676625649999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="caO-5e-CsL">
                                     <size key="itemSize" width="106" height="77"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -80,6 +80,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="106" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PSCellBorder.png" translatesAutoresizingMaskIntoConstraints="NO" id="4lg-5Z-zae">
+                                                    <rect key="frame" x="0.0" y="0.0" width="106" height="77"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-4o-NMS">
                                                     <rect key="frame" x="32" y="48.5" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -1034,6 +1037,7 @@
         <image name="3.jpg" width="25" height="24"/>
         <image name="4.jpg" width="24" height="24"/>
         <image name="Home.png" width="25" height="24"/>
+        <image name="PSCellBorder.png" width="24" height="24"/>
         <image name="ic_back.png" width="29" height="20"/>
     </resources>
 </document>

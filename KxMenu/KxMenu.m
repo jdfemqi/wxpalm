@@ -52,8 +52,6 @@ const CGFloat kArrowSize = 12.f;
 
 @implementation KxMenuOverlay
 
-// - (void) dealloc { NSLog(@"dealloc %@", self); }
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

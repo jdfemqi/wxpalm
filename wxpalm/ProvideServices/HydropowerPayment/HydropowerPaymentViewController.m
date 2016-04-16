@@ -7,7 +7,6 @@
 //
 
 #import "HydropowerPaymentViewController.h"
-#import "UIBaseNavigationBar.h"
 
 @interface HydropowerPaymentViewController ()
 {

@@ -576,8 +576,88 @@
                     <view key="view" contentMode="scaleToFill" id="bsK-6E-VVl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93Q-rP-rLG">
+                                <rect key="frame" x="0.0" y="60" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="x87-5a-95M"/>
+                                    <barButtonItem title="手机话费" id="WOZ-ep-5Go">
+                                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ybo-TI-PP7"/>
+                                    <barButtonItem title="QQ充值" id="XYw-Oq-cyz">
+                                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zMx-By-dRj"/>
+                                    <barButtonItem title="游戏点卡" id="Vgn-xc-WeL">
+                                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="Zkv-NO-OhO"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-7L-scO">
+                                <rect key="frame" x="0.0" y="106" width="600" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7f-7V-e2I">
+                                <rect key="frame" x="0.0" y="106" width="600" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83e-MC-YEw">
+                                <rect key="frame" x="0.0" y="106" width="600" height="494"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入手机号码" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-Ex-hHA">
+                                        <rect key="frame" x="10" y="10" width="580" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zza-bg-y0M"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFk-BP-7N2">
+                                        <rect key="frame" x="10" y="60" width="580" height="40"/>
+                                        <color key="backgroundColor" red="0.8606858221" green="0.72399328860000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ryI-Ex-hHA" secondAttribute="trailing" constant="10" id="2xZ-qb-ezZ"/>
+                                    <constraint firstItem="LFk-BP-7N2" firstAttribute="trailing" secondItem="ryI-Ex-hHA" secondAttribute="trailing" id="7eK-AF-nQO"/>
+                                    <constraint firstItem="LFk-BP-7N2" firstAttribute="leading" secondItem="ryI-Ex-hHA" secondAttribute="leading" id="eu3-hu-IPx"/>
+                                    <constraint firstItem="LFk-BP-7N2" firstAttribute="top" secondItem="ryI-Ex-hHA" secondAttribute="bottom" constant="10" id="odL-bD-FlQ"/>
+                                    <constraint firstItem="ryI-Ex-hHA" firstAttribute="leading" secondItem="83e-MC-YEw" secondAttribute="leading" constant="10" id="x2L-fM-Wsf"/>
+                                    <constraint firstItem="LFk-BP-7N2" firstAttribute="height" secondItem="ryI-Ex-hHA" secondAttribute="height" id="zaH-B0-sUg"/>
+                                    <constraint firstItem="ryI-Ex-hHA" firstAttribute="top" secondItem="83e-MC-YEw" secondAttribute="top" constant="10" id="zfb-gO-q71"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="83e-MC-YEw" firstAttribute="leading" secondItem="bsK-6E-VVl" secondAttribute="leading" id="3tO-95-Sem"/>
+                            <constraint firstAttribute="trailing" secondItem="83e-MC-YEw" secondAttribute="trailing" id="4V6-dM-3Qj"/>
+                            <constraint firstItem="VDa-7L-scO" firstAttribute="top" secondItem="83e-MC-YEw" secondAttribute="top" id="K9I-hU-x7U"/>
+                            <constraint firstAttribute="trailing" secondItem="93Q-rP-rLG" secondAttribute="trailing" id="VA6-Ir-gpI"/>
+                            <constraint firstItem="b7f-7V-e2I" firstAttribute="trailing" secondItem="VDa-7L-scO" secondAttribute="trailing" id="Wl3-4g-rqA"/>
+                            <constraint firstItem="VDa-7L-scO" firstAttribute="trailing" secondItem="83e-MC-YEw" secondAttribute="trailing" id="Z40-ce-FJs"/>
+                            <constraint firstItem="b7f-7V-e2I" firstAttribute="leading" secondItem="VDa-7L-scO" secondAttribute="leading" id="c2F-6c-VZU"/>
+                            <constraint firstItem="VDa-7L-scO" firstAttribute="bottom" secondItem="83e-MC-YEw" secondAttribute="bottom" id="fwT-8s-hGR"/>
+                            <constraint firstItem="93Q-rP-rLG" firstAttribute="top" secondItem="2mJ-Ab-J7g" secondAttribute="bottom" constant="40" id="hdl-Lv-8LG"/>
+                            <constraint firstItem="b7f-7V-e2I" firstAttribute="top" secondItem="VDa-7L-scO" secondAttribute="top" id="hzc-Tb-sMo"/>
+                            <constraint firstItem="4TV-0l-iBr" firstAttribute="top" secondItem="83e-MC-YEw" secondAttribute="bottom" id="ijw-iL-CSf"/>
+                            <constraint firstItem="VDa-7L-scO" firstAttribute="leading" secondItem="83e-MC-YEw" secondAttribute="leading" id="kt8-hI-cCg"/>
+                            <constraint firstItem="93Q-rP-rLG" firstAttribute="leading" secondItem="bsK-6E-VVl" secondAttribute="leading" id="m07-au-bYo"/>
+                            <constraint firstItem="83e-MC-YEw" firstAttribute="top" secondItem="93Q-rP-rLG" secondAttribute="bottom" constant="2" id="ym5-Qe-ccp"/>
+                            <constraint firstItem="b7f-7V-e2I" firstAttribute="bottom" secondItem="VDa-7L-scO" secondAttribute="bottom" id="z2M-uu-r2f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfMobileNumber" destination="ryI-Ex-hHA" id="hMR-Lk-fL6"/>
+                        <outlet property="viewGameCards" destination="b7f-7V-e2I" id="gT3-md-IP0"/>
+                        <outlet property="viewMobilePhone" destination="83e-MC-YEw" id="a3n-E5-c02"/>
+                        <outlet property="viewMobileRechargAmount" destination="LFk-BP-7N2" id="lnY-Qg-zbR"/>
+                        <outlet property="viewQQRecharge" destination="VDa-7L-scO" id="9yB-vy-V4c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vS-vn-luU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -27,9 +27,8 @@
  [arrBarItems addObject:leftButton];
  self.navigationController.navigationItem.leftBarButtonItem = leftButton;
  
- 
  // 统一返回按钮
- /*UIImage *imageBack = [UIImage imageNamed:@"ic_back.png"];
+ UIImage *imageBack = [UIImage imageNamed:@"ic_back.png"];
  [[UIBarButtonItem appearance]setBackButtonBackgroundImage:[imageBack resizableImageWithCapInsets:UIEdgeInsetsMake(0, image.size.width, 0, 0)]  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
  
  // 隐藏返回按钮上的文本
