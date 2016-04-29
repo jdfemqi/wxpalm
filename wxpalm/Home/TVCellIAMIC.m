@@ -7,8 +7,7 @@
 //
 
 #import "TVCellIAMIC.h"
-#import "./IAMIC.framework/Headers/IAMICObject.h"
-
+#import "../CustomControls.framework/Headers/IAMICObject.h"
 
 @interface TVCellIAMIC ()
 {
@@ -32,6 +31,7 @@
 
 - (void)setConfig:(UITableView *)tableView : (NSIndexPath *)indexPath
 {
+    
     // Initialization code
     // 读取程序包中的资源文件
     NSString* _plistPath = [[NSBundle mainBundle]pathForResource:@"imageInfo" ofType:@"plist"];
@@ -43,8 +43,10 @@
     CGRect rc = CGRectMake(rectInTableView.origin.x, 4, szCell.width, szCell.height);
     
     _iamic = [[IAMICObject alloc]init];
+    
     [_iamic setResourcePath:_plistPath :_resourcePath];
     [_iamic setConfigure:self.contentView :rc];
+    //return;
     [_iamic shouldAutoShow:TRUE];
 }
 

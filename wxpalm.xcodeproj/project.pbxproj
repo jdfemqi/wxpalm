@@ -24,13 +24,13 @@
 		060A81341C928E9E00CAD221 /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 060A812F1C928E9E00CAD221 /* doubleicon.png */; };
 		060A81361C928E9E00CAD221 /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 060A81311C928E9E00CAD221 /* toolicon.png */; };
 		060A81381C928EE800CAD221 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 060A81371C928EE800CAD221 /* Home.png */; };
+		066D12151CC9ECF90035B443 /* CustomControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066D12141CC9ECF90035B443 /* CustomControls.framework */; };
 		06734A051CB7C4B100A043AF /* ic_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 06734A041CB7C4B100A043AF /* ic_back.png */; };
 		06734A0E1CB7D8C500A043AF /* PublicFuncObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 06734A0D1CB7D8C500A043AF /* PublicFuncObject.m */; };
 		06734A111CB7DB1B00A043AF /* NormalNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06734A101CB7DB1B00A043AF /* NormalNavBarViewController.m */; };
 		0677426D1C99701600C39680 /* HomeDFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067742611C99701600C39680 /* HomeDFCollectionViewCell.m */; };
 		0677426E1C99701600C39680 /* HomeTBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067742631C99701600C39680 /* HomeTBCollectionViewCell.m */; };
 		0677426F1C99701600C39680 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067742651C99701600C39680 /* HomeViewController.m */; };
-		067742701C99701600C39680 /* IAMIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067742661C99701600C39680 /* IAMIC.framework */; };
 		067742711C99701600C39680 /* TVCellDailyFuncCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 067742681C99701600C39680 /* TVCellDailyFuncCollection.m */; };
 		067742721C99701600C39680 /* TVCellIAMIC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0677426A1C99701600C39680 /* TVCellIAMIC.m */; };
 		067742731C99701600C39680 /* TVCellTBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0677426C1C99701600C39680 /* TVCellTBCollection.m */; };
@@ -59,9 +59,6 @@
 		06BA437A1CA63923009E4D78 /* ThreeLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BA43711CA63923009E4D78 /* ThreeLevelViewController.m */; };
 		06BA437E1CA6395D009E4D78 /* CareersServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BA437D1CA6395D009E4D78 /* CareersServiceViewController.m */; };
 		06BAD5D41CB611EE00393B3A /* HydropowerPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BAD5D31CB611EE00393B3A /* HydropowerPaymentViewController.m */; };
-		06BD25561CC2206F00809D22 /* UIComboBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BD25551CC2206F00809D22 /* UIComboBox.framework */; };
-		06BD255C1CC228F100809D22 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BD25591CC228F100809D22 /* NIDropDown.m */; };
-		06BD255D1CC228F100809D22 /* UIComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BD255B1CC228F100809D22 /* UIComboBoxView.m */; };
 		06BD8A601C9BBCB0003C15FC /* dependenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A5B1C9BBCB0003C15FC /* dependenticon.png */; };
 		06BD8A611C9BBCB0003C15FC /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A5C1C9BBCB0003C15FC /* doubleicon.png */; };
 		06BD8A621C9BBCB0003C15FC /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A5D1C9BBCB0003C15FC /* Home.png */; };
@@ -69,6 +66,7 @@
 		06BD8A641C9BBCB0003C15FC /* work.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A5F1C9BBCB0003C15FC /* work.png */; };
 		06BD8A671C9BBFD3003C15FC /* DailyFuncInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A661C9BBFD3003C15FC /* DailyFuncInfo.plist */; };
 		06BD8A6A1C9BC391003C15FC /* ProvideServicesInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */; };
+		06BF74001CD31ADA00B37422 /* CustomControls.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06BF73FF1CD31ADA00B37422 /* CustomControls.bundle */; };
 		06C2063F1C9E8D64009A0915 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2063E1C9E8D64009A0915 /* RootViewController.m */; };
 		06C7E2111CAFB8DC001390CB /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C7E2101CAFB8DC001390CB /* KxMenu.m */; };
 		06C7E2131CAFBA42001390CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C7E2121CAFBA42001390CB /* CoreGraphics.framework */; };
@@ -125,6 +123,7 @@
 		060A812F1C928E9E00CAD221 /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleicon.png; sourceTree = "<group>"; };
 		060A81311C928E9E00CAD221 /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
 		060A81371C928EE800CAD221 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		066D12141CC9ECF90035B443 /* CustomControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CustomControls.framework; path = wxpalm/CustomControls.framework; sourceTree = "<group>"; };
 		06734A041CB7C4B100A043AF /* ic_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_back.png; sourceTree = "<group>"; };
 		06734A0C1CB7D8C500A043AF /* PublicFuncObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicFuncObject.h; sourceTree = "<group>"; };
 		06734A0D1CB7D8C500A043AF /* PublicFuncObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicFuncObject.m; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 		067742631C99701600C39680 /* HomeTBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTBCollectionViewCell.m; sourceTree = "<group>"; };
 		067742641C99701600C39680 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		067742651C99701600C39680 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		067742661C99701600C39680 /* IAMIC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IAMIC.framework; sourceTree = "<group>"; };
 		067742671C99701600C39680 /* TVCellDailyFuncCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCellDailyFuncCollection.h; sourceTree = "<group>"; };
 		067742681C99701600C39680 /* TVCellDailyFuncCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCellDailyFuncCollection.m; sourceTree = "<group>"; };
 		067742691C99701600C39680 /* TVCellIAMIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCellIAMIC.h; sourceTree = "<group>"; };
@@ -178,11 +176,6 @@
 		06BA437D1CA6395D009E4D78 /* CareersServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareersServiceViewController.m; sourceTree = "<group>"; };
 		06BAD5D21CB611EE00393B3A /* HydropowerPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HydropowerPaymentViewController.h; sourceTree = "<group>"; };
 		06BAD5D31CB611EE00393B3A /* HydropowerPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HydropowerPaymentViewController.m; sourceTree = "<group>"; };
-		06BD25551CC2206F00809D22 /* UIComboBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIComboBox.framework; path = wxpalm/UIComboBox.framework; sourceTree = "<group>"; };
-		06BD25581CC228F100809D22 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
-		06BD25591CC228F100809D22 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
-		06BD255A1CC228F100809D22 /* UIComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIComboBoxView.h; sourceTree = "<group>"; };
-		06BD255B1CC228F100809D22 /* UIComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIComboBoxView.m; sourceTree = "<group>"; };
 		06BD8A5B1C9BBCB0003C15FC /* dependenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dependenticon.png; sourceTree = "<group>"; };
 		06BD8A5C1C9BBCB0003C15FC /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleicon.png; sourceTree = "<group>"; };
 		06BD8A5D1C9BBCB0003C15FC /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
@@ -190,6 +183,7 @@
 		06BD8A5F1C9BBCB0003C15FC /* work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = work.png; sourceTree = "<group>"; };
 		06BD8A661C9BBFD3003C15FC /* DailyFuncInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DailyFuncInfo.plist; sourceTree = "<group>"; };
 		06BD8A691C9BC391003C15FC /* ProvideServicesInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvideServicesInfo.plist; sourceTree = "<group>"; };
+		06BF73FF1CD31ADA00B37422 /* CustomControls.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CustomControls.bundle; path = wxpalm/CustomControls.bundle; sourceTree = "<group>"; };
 		06C2063D1C9E8D64009A0915 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		06C2063E1C9E8D64009A0915 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06C7E20F1CAFB8DC001390CB /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
@@ -247,12 +241,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066D12151CC9ECF90035B443 /* CustomControls.framework in Frameworks */,
 				06C7E2171CAFBA5E001390CB /* Foundation.framework in Frameworks */,
 				06C7E2151CAFBA54001390CB /* UIKit.framework in Frameworks */,
 				06C7E2131CAFBA42001390CB /* CoreGraphics.framework in Frameworks */,
 				06F0734D1CA94EDD00BB9436 /* libsqlite3.tbd in Frameworks */,
-				067742701C99701600C39680 /* IAMIC.framework in Frameworks */,
-				06BD25561CC2206F00809D22 /* UIComboBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +267,8 @@
 		060A81051C92893E00CAD221 = {
 			isa = PBXGroup;
 			children = (
-				06BD25551CC2206F00809D22 /* UIComboBox.framework */,
+				06BF73FF1CD31ADA00B37422 /* CustomControls.bundle */,
+				066D12141CC9ECF90035B443 /* CustomControls.framework */,
 				06C7E2161CAFBA5E001390CB /* Foundation.framework */,
 				06C7E2141CAFBA54001390CB /* UIKit.framework */,
 				06C7E2121CAFBA42001390CB /* CoreGraphics.framework */,
@@ -298,7 +292,6 @@
 		060A81101C92893E00CAD221 /* wxpalm */ = {
 			isa = PBXGroup;
 			children = (
-				06BD25571CC228F100809D22 /* UIComboBox */,
 				06C95EA11CA8EEAE00779FDA /* html */,
 				06FD90821CA259F00041BB50 /*  Personal */,
 				06FD907E1CA2563B0041BB50 /* Cart */,
@@ -364,7 +357,6 @@
 			children = (
 				06BD8A661C9BBFD3003C15FC /* DailyFuncInfo.plist */,
 				06B90BE51C9A78C900130C61 /* homeTBInfo.plist */,
-				067742661C99701600C39680 /* IAMIC.framework */,
 				067742601C99701600C39680 /* HomeDFCollectionViewCell.h */,
 				067742611C99701600C39680 /* HomeDFCollectionViewCell.m */,
 				067742621C99701600C39680 /* HomeTBCollectionViewCell.h */,
@@ -464,17 +456,6 @@
 				06BAD5D31CB611EE00393B3A /* HydropowerPaymentViewController.m */,
 			);
 			path = HydropowerPayment;
-			sourceTree = "<group>";
-		};
-		06BD25571CC228F100809D22 /* UIComboBox */ = {
-			isa = PBXGroup;
-			children = (
-				06BD25581CC228F100809D22 /* NIDropDown.h */,
-				06BD25591CC228F100809D22 /* NIDropDown.m */,
-				06BD255A1CC228F100809D22 /* UIComboBoxView.h */,
-				06BD255B1CC228F100809D22 /* UIComboBoxView.m */,
-			);
-			path = UIComboBox;
 			sourceTree = "<group>";
 		};
 		06BD8A5A1C9BBCB0003C15FC /* ProvideServicesIcons */ = {
@@ -702,6 +683,7 @@
 				060A811E1C92893E00CAD221 /* Assets.xcassets in Resources */,
 				06BA43781CA63923009E4D78 /* PSCommodityType.plist in Resources */,
 				060A81381C928EE800CAD221 /* Home.png in Resources */,
+				06BF74001CD31ADA00B37422 /* CustomControls.bundle in Resources */,
 				06BD8A6A1C9BC391003C15FC /* ProvideServicesInfo.plist in Resources */,
 				060A81331C928E9E00CAD221 /* dependenticon.png in Resources */,
 				06F0734B1CA94B6D00BB9436 /* Info.plist in Resources */,
@@ -749,7 +731,6 @@
 				06CBC7791CABF50C00A84AC6 /* ToolBarItemOrderInfo.m in Sources */,
 				06F073501CA95BA200BB9436 /* CellShoppingList.m in Sources */,
 				060A81131C92893E00CAD221 /* main.m in Sources */,
-				06BD255D1CC228F100809D22 /* UIComboBoxView.m in Sources */,
 				06F0A99B1CB8A99E006A8180 /* CreditCardPaymentViewController.m in Sources */,
 				06BA43771CA63923009E4D78 /* IntegratedMallViewController.m in Sources */,
 				06BA43721CA63923009E4D78 /* BestSellersCollectionViewCell.m in Sources */,
@@ -761,7 +742,6 @@
 				0609F8511CAA3AE30004E8FA /* ProvSerCollectionCell.m in Sources */,
 				06FD907D1CA2553F0041BB50 /* ProvideServicesViewController.m in Sources */,
 				06F073481CA94B6D00BB9436 /* FMDatabasePool.m in Sources */,
-				06BD255C1CC228F100809D22 /* NIDropDown.m in Sources */,
 				06F0A9AB1CB8AFD1006A8180 /* AttractionsTicketsViewController.m in Sources */,
 				06BA43731CA63923009E4D78 /* CellMallCommodity.m in Sources */,
 				06BA43761CA63923009E4D78 /* FourLevelViewController.m in Sources */,

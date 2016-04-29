@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol UIComboBoxViewDelegate
+- (void) selChange: (NSInteger) nItem;
+@end
+
 @interface UIComboBoxView : UIView
+
+@property (nonatomic, strong) id <UIComboBoxViewDelegate> delegate;
 
 // 点击隐藏窗口
 -(void)configClickHiddenView:(UIView*)viewSuper;

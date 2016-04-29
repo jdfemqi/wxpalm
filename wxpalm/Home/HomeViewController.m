@@ -10,7 +10,6 @@
 #import "TVCellTBCollection.h"
 #import "TVCellIAMIC.h"
 #import "TVCellDailyFuncCollection.h"
-#import "./IAMIC.framework/Headers/IAMICObject.h"
 
 
 #define CellTBCollectionIdentifier  @"CellTBCollectionIdentifier"       // 常用功能工具条

@@ -1,6 +1,0 @@
-framework module IAMIC {
-  umbrella header "IAMIC.h"
-
-  export *
-  module * { export * }
-}
